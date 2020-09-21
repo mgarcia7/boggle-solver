@@ -1,0 +1,69 @@
+/* static/style.css */
+
+h1 {
+    color: black;
+    font-variant-caps: all-small-caps;
+    font-size: 46px;
+}
+
+body {
+    background: white;
+}
+
+p {
+  color: black;
+}
+
+#imgcontainer {
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background: black;
+  display: none;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -150px;
+  /* transform: translate(-50%,-50%); */
+  display: none;
+}
+
+
+
+ifixpt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  transform: translate(-50%,-50%);
+}
+
+.form-check {
+  display:none;
+}
+
+div.form
+{
+    display: block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}

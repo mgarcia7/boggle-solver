@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+
+{% block app_content %}
+<h1 id="init_prompt"> {{ response_string}}<br>{{ name }}, press the spacebar to initiate a trial.</h1>
+<!-- <div id="imgcontainer"> -->
+  <img id="center_im" alt="image" class="center">
+<!-- </div> -->
+<ifixpt id='fixation_pt'> </ifixpt>
+<div class="form-check">
+  {{ wtf.quick_form(form) }}
+</div>
+
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type=text/javascript>
+  $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+</script>
+  <script src="{{url_for('.static', filename='script.js')}}"></script>
+</body>
+{% endblock %}
